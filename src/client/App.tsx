@@ -8,6 +8,7 @@ import Home from "./views/home";
 import Create from "./views/Create";
 import Users from "./views/users";
 import UserDetails from "./views/userdetails";
+import NotFound from "./views/notfound";
 
 const App = () => {
     return (
@@ -42,6 +43,10 @@ const App = () => {
                     <Route
                         path="/users/:id"
                         element={<UserDetails />}
+                    />
+                    <Route
+                        path="*"
+                        element={<NotFound />}
                     />
                 </Routes>
             </main>
