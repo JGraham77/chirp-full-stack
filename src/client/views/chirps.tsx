@@ -8,7 +8,7 @@ const Chirps = () => {
     const [chirps, setChirps] = useState<ChirpsWithUsers[]>([]);
 
     useEffect(() => {
-        GET("api/chirps").then(setChirps);
+        GET("/api/chirps").then(setChirps);
     }, []);
 
     return (

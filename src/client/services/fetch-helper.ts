@@ -2,10 +2,10 @@ import Swal from "sweetalert2";
 
 type VALID_METHODS = "GET" | "POST" | "PUT" | "DELETE";
 
-export const GET = (url: string) => fetcher(url);
-export const POST = (url: string, data: any) => fetcher(url, 'POST', data);
-export const PUT = (url: string, data: any) => fetcher(url, 'PUT', data);
-export const DELETE = (url: string) => fetcher(url, 'DELETE');
+export const GET = <T =any>(url: string) => fetcher<T>(url);
+export const POST = <T =any>(url: string, data: any) => fetcher<T>(url, 'POST', data);
+export const PUT = <T =any>(url: string, data: any) => fetcher<T>(url, 'PUT', data);
+export const DELETE = <T =any>(url: string) => fetcher<T>(url, 'DELETE');
 
 
 
