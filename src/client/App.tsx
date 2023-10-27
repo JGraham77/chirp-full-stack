@@ -16,38 +16,14 @@ const App = () => {
             <Navbar />
             <main className="container">
                 <Routes>
-                    <Route
-                        path="/"
-                        element={<Home />}
-                    />
-                    <Route
-                        path="/chirps"
-                        element={<Chirps />}
-                    />
-                    <Route
-                        path="/chirps/:id"
-                        element={<ChirpDetails />}
-                    />
-                    <Route
-                        path="/chirps/:id/edit"
-                        element={<Edit />}
-                    />
-                    <Route
-                        path="/create"
-                        element={<Create />}
-                    />
-                    <Route
-                        path="/users"
-                        element={<Users />}
-                    />
-                    <Route
-                        path="/users/:id"
-                        element={<UserDetails />}
-                    />
-                    <Route
-                        path="*"
-                        element={<NotFound />}
-                    />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/chirps" element={<Chirps />} />
+                    <Route path="/chirps/:id" element={<ChirpDetails />} />
+                    <Route path="/chirps/:id/edit" element={<Edit />} />
+                    <Route path="/create" element={<Create />} />
+                    <Route path="/users" element={<Users />} />
+                    <Route path="/users/:id" element={<UserDetails />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
         </BrowserRouter>

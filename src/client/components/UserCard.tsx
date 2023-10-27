@@ -12,10 +12,7 @@ const UserCard = ({ user, isDetails }: { user: Users; isDetails?: boolean }) => 
                 <div className="card-body">
                     <p className="text-muted">{user.email}</p>
                     {!isDetails && (
-                        <Link
-                            className="btn btn-primary"
-                            to={`/users/${user.id}`}
-                        >
+                        <Link className="btn btn-primary" to={`/users/${user.id}`}>
                             User {user.id}
                         </Link>
                     )}

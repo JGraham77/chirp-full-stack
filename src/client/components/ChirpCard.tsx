@@ -12,18 +12,12 @@ const ChirpCard = ({ chirp, isDetails }: { chirp: ChirpsWithUsers; isDetails?: b
                 <div className="card-body">
                     <p className="text-muted">{chirp.content}</p>
                     {!isDetails && (
-                        <Link
-                            className="btn btn-primary"
-                            to={`/chirps/${chirp.id}`}
-                        >
+                        <Link className="btn btn-primary" to={`/chirps/${chirp.id}`}>
                             Chirp {chirp.id}
                         </Link>
                     )}
                     {isDetails && (
-                        <Link
-                            className="btn btn-warning"
-                            to={`/chirps/${chirp.id}/edit`}
-                        >
+                        <Link className="btn btn-warning" to={`/chirps/${chirp.id}/edit`}>
                             Edit or Delete Chirp #{chirp.id}
                         </Link>
                     )}

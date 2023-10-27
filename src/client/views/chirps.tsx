@@ -14,10 +14,7 @@ const Chirps = () => {
     return (
         <div className="row justify-content-center">
             {chirps.map((chirp) => (
-                <ChirpCard
-                    chirp={chirp}
-                    key={`chirp-card-${chirp.id}`}
-                />
+                <ChirpCard chirp={chirp} key={`chirp-card-${chirp.id}`} />
             ))}
         </div>
     );
